@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FlyAway Ticket Payment</title>
+
+</head>
+<body>
+<body>
+<center> <h1> Flyaway Payments Page</h1> </center>  
+<form id="simplify-payment-form" action="/flyaway-airline-portal/confirm.html" method="POST">
+    <div>
+        <label>Credit Card Number: </label>
+        <input id="cc-number" type="text" maxlength="20" autocomplete="off" value="" autofocus />
+    </div>
+    <div>
+        <label>CVC: </label>
+        <input id="cc-cvc" type="text" maxlength="4" autocomplete="off" value=""/>
+    </div>
+    <div>
+        <label>Expiry Date: </label>
+        <select id="cc-exp-month">
+            <option value="01">Jan</option>
+            <option value="02">Feb</option>
+            <option value="03">Mar</option>
+            <option value="04">Apr</option>
+            <option value="05">May</option>
+            <option value="06">Jun</option>
+            <option value="07">Jul</option>
+            <option value="08">Aug</option>
+            <option value="09">Sep</option>
+            <option value="10">Oct</option>
+            <option value="11">Nov</option>
+            <option value="12">Dec</option>
+        </select>
+        <select id="cc-exp-year">
+            <option value="13">2022</option>
+            <option value="14">2023</option>
+            <option value="15">2024</option>
+            <option value="16">2025</option>
+            <option value="17">2026</option>
+            <option value="18">2027</option>
+            <option value="19">2028</option>
+            <option value="20">2029</option>
+            <option value="21">2030</option>
+            <option value="22">2031</option>
+        </select>
+    </div>
+    <button id="process-payment-btn" type="submit">Process Payment</button>
+</form>
+</body>
+</html>

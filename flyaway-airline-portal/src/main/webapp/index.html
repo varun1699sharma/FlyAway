@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FlyAway Ticket Reservation</title>
+</head>
+<body>
+    
+<h1 style=" text-align: center;">FlyAway - Ticket Booking Portal</h1>
+<hr size="5" color="black"/>
+<center>
+<form action="/priceservlet" method="post">
+<table width="70%" border="2%">
+    <tr valign="top">
+            <td>
+                <div class="radio"></div>
+                <input type="radio" id="one" name="trip" value="oneway" checked>
+                <label for="one">One Way</label>
+                <input type="radio" id="round" name="trip" value="roundtrip">
+                <label for="roundtrip">Round Trip</label>
+            </td> 
+    </tr>
+    <tr>
+        <td>
+            <label for="from">Flying From:</label>
+
+            <select name="source" id="source">
+        <option value="0">Select</option>
+        <option value="1">New York</option>
+        <option value="2">Vancouver</option>
+        <option value="3">Tokyo</option>
+        <option value="4">Manila</option>
+        <option value="5">Jakarta</option>
+        <option value="6">Sydney</option>
+        <option value="7">Melbourne</option>
+        <option value="8">London</option>
+        <option value="9">San Francisco</option>
+        <option value="10">Los Angeles</option>
+        <option value="11">Mumbai</option>
+        <option value="12">Delhi</option>
+        <option value="13">Kathmandu</option>
+        <option value="14">Bangkok</option>
+        </select>
+        </td>
+    </tr>
+        <td>
+        <label for="to">Flying To:</label>
+
+        <select name="destination" id="destination">
+        <option value="0">Select</option>
+        <option value="1">Tokyo</option>
+        <option value="2">Vancouver</option>
+        <option value="3">New York</option>
+        <option value="4">Manila</option>
+        <option value="5">Jakarta</option>
+        <option value="6">Sydney</option>
+        <option value="7">Melbourne</option>
+        <option value="8">London</option>
+        <option value="9">San Francisco</option>
+        <option value="10">Los Angeles</option>
+        <option value="11">Mumbai</option>
+        <option value="12">Delhi</option>
+        <option value="13">Kathmandu</option>
+        <option value="14">Bangkok</option>
+        </select>
+        </td>
+    </tr>
+<tr>
+   <td>
+    <label>Departure Date</label>
+    <input type="date" name ="departure" class="form-control select-date">
+   </td>
+</tr>
+<tr>
+    <td>
+    <label>Returning Date</label>
+    <input type="date" name="returning" class="form-control select-date">
+    </td>
+</tr>
+<tr>
+    <td>   
+    <label>Adults</label>
+    <input type="number" class="form-control" value="1">
+
+    <label>Children</label>
+    <input type="number" class="form-control" value="0">
+    </td>
+</tr>
+<tr>
+    <td>   
+    <label>Travel Class</label>
+    <select class="custom-select">
+   <option value='Eco'>Economy Class</option>
+   <option value='First'>First Class</option>
+   </select>
+   </td>
+</tr>
+<tr>
+    <td>
+<a href="priceservlet">Show Tickets</a>
+    </td>
+</tr>
+
+<tr>
+    <td>
+<a href="login.html">Admin Login</a>
+    </td>
+</tr>
+<br>
+<tr>
+	<td>         
+	<a href="userinput.jsp">User Input Details</a>
+	</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>

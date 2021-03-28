@@ -1,0 +1,27 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+
+</head>    
+<body>  
+    <center> <h1> FlyAway Admin Login Page </h1> </center>   
+    <form action="loginservlet" method="post">
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  <br/>
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  <br/>
+               
+            <input type="checkbox" checked="checked"> Remember me   <br/>
+            <button type="submit"><b>Login</b></button> <br/>
+            
+            <a href="http://localhost:8080/flyaway-airline-portal/"> Cancel </a><br/>
+            Forgot <a href="mailto:admin@flyawayXX.com"> password? </a>  <br/>
+            <br>
+            <a href="changepassword.html">Change Password</a>
+        </div>   
+    </form>     
+</body>     
+</html>  
